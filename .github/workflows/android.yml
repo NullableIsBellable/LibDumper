@@ -28,3 +28,6 @@ jobs:
       run: dos2unix ./gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - uses: actions/upload-artifact@v4
+        name: libdumper
+        path: ./*
